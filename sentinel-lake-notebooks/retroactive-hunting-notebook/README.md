@@ -11,7 +11,7 @@ Reference the general [Sentinel Notebook Readme](../README.md) for guidance on i
 For this job specifically there is job yaml file included.  Action required by users on that job yaml:
 - **StartTime**: What day and time the job should start running.
 - **EndTime**: What day and time the job should stop running.
-- **JobName(Optional)**: If you decide to change the jobname, prefix the name with 'MS-Retroactive-Hunting'. 
+- **JobName(Optional)**: If you decide to change the jobname, prefix the name with 'TI-Retroactive-Hunting'. 
 
 ### Key Features:
 - **Multiple log source support**
