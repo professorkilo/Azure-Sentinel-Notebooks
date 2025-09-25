@@ -20,13 +20,13 @@ For this job specifically there is job yaml file included.  Action required by u
 - **Adjustable lookback period**: Configure how long back it should look for matches.
 
 ### Currently Supported Log Sources:
-- **SigninLogs**: Standard user sign-in activities.
+- **SigninLogs**: Standard user sign-in activities.  This includes the following tables: SigninLogs, AADNonInteractiveUserSignInLogs, AADServicePrincipalSignInLogs, AADManagedIdentitySignInLogs.
 - **Syslogs**: General table for logging system and security events.
 - **CommonSecurityLogs**: Table for collecting events in the Common Event format from different security sources.
 
 ### Required Customer Input:
 - **WORKSPACE_NAME**: Customer Log Analytics workspace name.  This will be used for retrieving indicator and log data, as well as for outputing match results.  If 'None' is provided then the notebook will look for the first log analytics workspace that is not the Sentinel generated 'default' workspace.
-- **LOOKBACK_DAYS**: 14-365.  Lookback time period for logs matching.  Default 365.
+- **LOOKBACK_DAYS**: 14-365.  Lookback time period for logs matching.  Default 30.
 - **MATCH_MODE**: Which ThreatIntelIndicators to match against which logs: current (TI valid now), loose (ignore validity).  Default "current".
 - Enabled the log sources that you would like to match against under the `LOG SOURCE TOGGLES - SUPPORTED` section.
 
